@@ -23,8 +23,8 @@ body {
 
 .Card {
     background-color: white;
-    width: 400px;
-    height: 500px;
+    width: 500px;
+    height: 600px;
 }
 
 .container {
@@ -47,8 +47,35 @@ h2 {
     font-weight: 100;
 }
 
-span.link {
+span.link, #reset {
     color: #0077ff;
     font-weight: 600;
     font-size: 12px;
+}
+
+.btn {
+    width: 400px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0084ff;
+    color: #f8f8f8;
+}
+
+#reset {
+    font-size: 16px;
+    text-align: left;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+#identity > #id-name {
+    
 }
