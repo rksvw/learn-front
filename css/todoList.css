@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(135deg, #7F00FF, #E100FF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card > .top-card {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin: 0px 0px 0px 50px;
+    align-items: center;
+}
+
+.card > .top-card > h1 {
+    text-align: left;
+    display: flex;
+}
+
+.card > .top-card > img {
+    width: 40px;
+    margin-left: 5px;
+}
+
+.card > .mid-card {
+    width: 90%;
+    height: 54px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 0px;
+    position: relative;
+}
+
+.card > .mid-card > input {
+    flex: 1;
+    outline: none;
+    border: none;
+    background-color: #e0e0e0;
+    height: 100%;
+    border-radius: 50px;
+    padding-left: 30px;
+    color: #2b2b2b;
+    font-size: 16px;
+}
+
+.card > .mid-card > .addList {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fa6604;
+    height: 54px;
+    top: 0;
+    right: 0;
+    border-radius: 50px;
+    position: absolute;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 12px;
+}
+
+.mid-card > .addList > .addNow {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.card > .bottom-card {
+    width: 100%;
+    margin-left: 50px;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bottom-card > .taskList {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.bottom-card > .taskList > li {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: 50px;
+    padding-left: 15px;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    border: .5px solid #b8b8b83a;
+    color: #181818;
+    position: relative;
+}
+
+.bottom-card > .taskList > li::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url('../img/unchecked.png');
+    background-size: 24px;
+    margin: 0px 10px 0px 0px;
+}
+
+.bottom-card > .taskList > li.checked {
+    text-decoration: line-through;
+    color: #525252;
+}
+
+.bottom-card > .taskList > li.checked::before {
+    background-image: url('../img/checked.png');
+}
+
+.bottom-card > .taskList > li > span {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+}
+
+.bottom-card > .taskList > li > span:hover {
+    background-color: #e4e4e481;
+    border-radius: 50px;
+}
+/* right -> #E100FF
+   left -> #7F00FF */

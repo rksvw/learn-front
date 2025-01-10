@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo list</title>
+    <link rel="stylesheet" href="../css/todoList.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="top-card">
+          <h1>To-Do List</h1>
+          <img src="../img/icon.png" alt="todo icon" />
+        </div>
+        <div class="mid-card">
+          <input
+            type="text"
+            name="todo"
+            id="todoInput"
+            placeholder="Add your text"
+            onclick="addTask()"
+          />
+          <div class="addList" onclick="addTask()"><span class="addNow"> Add </span></div>
+        </div>
+        <div class="bottom-card">
+            <ul class="taskList" id="newTask">
+                <!-- <li class="checked">Task 1</li>
+                <li>Task 2</li>
+                <li class="checked">Task 3</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../js/todoList.js"></script>
+  </body>
+</html>
