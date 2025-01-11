@@ -1,19 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WeatherApp</title>
-    <link rel="stylesheet" href="../css/weather.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/weather.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="search">
-            <input type="text" placeholder="enter city name" spellcheck="false">
-            <button>
-                <img src="../img/search.png" alt="search icon">
-            </button>
+      <div class="search">
+        <input type="text" placeholder="enter city name" spellcheck="false" />
+        <button>
+          <img src="../img/search.png" alt="search icon" />
+        </button>
+      </div>
+      <div class="weather">
+        <img src="../img/rain.png" alt="weather icon" class="weatherIcon" />
+        <h1 class="temp">22°c</h1>
+        <h2 class="city">New York</h2>
+        <div class="details">
+          <div class="col">
+            <img
+              src="../img/humidity.png"
+              alt="humidity icon"
+              class="humidityIcon"
+            />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="../img/wind.png" alt="wind icon" class="windIcon" />
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
