@@ -1,3 +1,4 @@
+// Quiz DATABASE
 const questions = [
   {
     question: "Which is the largest animal in the world?",
@@ -85,13 +86,16 @@ const questions = [
   },
 ];
 
+// Element Varables
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answerButtons");
 const nextButton = document.getElementById("nextButton");
 
+// Score
 let currentQuestionIndex = 0;
 let score = 0;
 
+// Starting Quiz
 const startQuiz = () => {
   currentQuestionIndex = 0;
   score = 0;
@@ -99,12 +103,14 @@ const startQuiz = () => {
   showQuestion();
 };
 
+// Show Questions
 const showQuestion = () => {
   resetState();
   let currentQuestion = questions[currentQuestionIndex];
   let questionNumber = currentQuestionIndex + 1;
   questionElement.innerHTML = questionNumber + ". " + currentQuestion.question;
 
+  //   Showing all Question's Answer in button
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
     button.innerHTML = answer.text;
@@ -117,6 +123,7 @@ const showQuestion = () => {
   });
 };
 
+// Reseting the Quiz
 const resetState = () => {
   nextButton.style.display = "none";
   while (answerButtons.firstChild) {
@@ -124,6 +131,7 @@ const resetState = () => {
   }
 };
 
+// Selecting right or wrong Answer
 const selectAnswer = (e) => {
   const selectButton = e.target;
   const isCorrect = selectButton.dataset.correct === "true";
@@ -145,6 +153,7 @@ const selectAnswer = (e) => {
   nextButton.style.display = "block";
 };
 
+// Showing Scores
 const showScore = () => {
   resetState();
   questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
@@ -152,6 +161,7 @@ const showScore = () => {
   nextButton.style.display = "block";
 };
 
+// Next Quiz
 const handleNextButton = () => {
   currentQuestionIndex++;
   if (currentQuestionIndex < questions.length) {
@@ -161,6 +171,7 @@ const handleNextButton = () => {
   }
 };
 
+// Click next to get next Quiz
 nextButton.addEventListener("click", () => {
   if (currentQuestionIndex < questions.length) {
     handleNextButton();
