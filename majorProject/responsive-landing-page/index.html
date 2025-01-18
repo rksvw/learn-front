@@ -15,7 +15,7 @@
 
     <!-- =============== CSS =============== -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Document</title>
+    <title>Responsive Landing Page</title>
   </head>
   <body>
     <!-- =============== HEADER =============== -->
@@ -78,13 +78,45 @@
       </section>
       <section class="sponsor section">
         <div class="sponsor__container container grid">
-            <img src="./img/sponsor1.png" alt="Apple" class="sponsor__img">
-            <img src="./img/sponsor2.png" alt="Spotify" class="sponsor__img">
-            <img src="./img/sponsor3.png" alt="Amazon" class="sponsor__img">
-            <img src="./img/sponsor4.png" alt="Youtube" class="sponsor__img">
+          <img src="./img/sponsor1.png" alt="Apple" class="sponsor__img" />
+          <img src="./img/sponsor2.png" alt="Spotify" class="sponsor__img" />
+          <img src="./img/sponsor3.png" alt="Amazon" class="sponsor__img" />
+          <img src="./img/sponsor4.png" alt="Youtube" class="sponsor__img" />
         </div>
       </section>
-      <section class="specs section grid" id="specs"></section>
+      <section class="specs section grid" id="specs">
+        <h2 class="section__title section__title-gradient">Specs</h2>
+        <div class="specs__container container grid">
+          <div class="specs__content grid">
+            <div class="specs__data">
+              <i class="ri-bluetooth-line specs__icon"></i>
+              <h3 class="specs__title">Connection</h3>
+              <span class="specs__subtitle">Bluetooth v5.2</span>
+            </div>
+            <div class="specs__data">
+              <i class="ri-battery-charge-line specs__icon"></i>
+              <h3 class="specs__title">Battery</h3>
+              <span class="specs__subtitle">Duration 40h</span>
+            </div>
+            <div class="specs__data">
+              <i class="ri-plug-line specs__icon"></i>
+              <h3 class="specs__title">Load</h3>
+              <span class="specs__subtitle">Fast charge 4.2-AAC</span>
+            </div>
+            <div class="specs__data">
+              <i class="ri-mic-line specs__icon"></i>
+              <h3 class="specs__title">Microphone</h3>
+              <span class="specs__subtitle"
+                >Support Apple siri <br />
+                and Google</span
+              >
+            </div>
+          </div>
+          <div>
+            <img src="./img/specs.png" alt="" class="specs__img">
+          </div>
+        </div>
+      </section>
       <section class="case section grid" id="case"></section>
     </menu>
     <script src="./js/script.js"></script>
