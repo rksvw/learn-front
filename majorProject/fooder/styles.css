@@ -116,10 +116,82 @@ main .container input {
   color: #000;
   font-size: 16px;
   font-weight: 400;
+  background-color: #F6F6F6;
 }
 
 main .container input::placeholder {
   color: #000;
   font-size: 16px;
   font-weight: 400;
+}
+
+main .container #location {
+  padding: 13px 15px;
+  font-size: 15px;
+}
+
+main .row {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+main .row .col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+main .row .col p {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px auto;
+  text-decoration: underline;
+}
+
+main .row .col .grid {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+main .row .col .grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+main .row .col .grid div img {
+  width: 100px;
+  border-top-right-radius: 15px;
+  /* border-bottom-left-radius: 15px; */
+  margin: 0px auto;
+  image-rendering: pixelated;
+}
+
+main .row .col .grid div p {
+  font-size: 14px;
+  text-decoration: none;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.8px 2px;
+  background-color: #fa6800;
+  outline: none;
+  border: none;
+  /* border-top-left-radius: 5px; */
+  border-bottom-right-radius: 5px;
+  color: #ffe2c1;
+  font-weight: 500;
 }
