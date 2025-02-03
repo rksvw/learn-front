@@ -53,12 +53,12 @@ header .top .rgt .profile {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FEB663;
+  background-color: #feb663;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 400;
-  color: #002D68;
+  color: #002d68;
 }
 
 header .top .rgt .profile i {
@@ -86,7 +86,7 @@ header .bottom p {
   align-items: center;
   text-align: center;
   justify-content: center;
-  background-color: #FFA640;
+  background-color: #ffa640;
   border-radius: 5px;
 }
 
@@ -116,7 +116,7 @@ main .container input {
   color: #000;
   font-size: 16px;
   font-weight: 400;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 main .container input::placeholder {
@@ -148,7 +148,7 @@ main .row .col {
   border-bottom-left-radius: 15px;
 }
 
-main .row .col p {
+main .row .col p, .fav-p {
   font-size: 20px;
   font-weight: 400;
   margin: 10px auto;
@@ -171,6 +171,7 @@ main .row .col .grid div {
   margin: 10px auto;
 }
 
+/* here i did it */
 main .row .col .grid div img {
   width: 100px;
   border-top-right-radius: 15px;
@@ -194,4 +195,66 @@ main .row .col .grid div p {
   border-bottom-right-radius: 5px;
   color: #ffe2c1;
   font-weight: 500;
+}
+
+main .fav-food {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  align-content: center;
+  gap: 10px;
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 15px;
+}
+
+main .fav-food-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+main .fav-food-row .col {
+  /* width: ; */
+  background-color: #f6f6f6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+main .fav-food-row .col img {
+  width: 120px;
+  height: 160px;
+  background-image: url("./food.jpg");
+  background-size: 130px 160px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+main .fav-food-row .col p {
+  font-size: 14px;
+  text-decoration: none;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.8px 2px;
+  background-color: #fa6800;
+  outline: none;
+  border: none;
+  /* border-top-left-radius: 5px; */
+  border-bottom-right-radius: 5px;
+  color: #ffe2c1;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 5px;
 }
