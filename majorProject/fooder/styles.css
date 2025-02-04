@@ -346,3 +346,7 @@ footer .foot-bot span {
   color: #000;
   margin-left: 3px;
 }
+
+footer .foot-bot a {
+  text-decoration: none;
+}
