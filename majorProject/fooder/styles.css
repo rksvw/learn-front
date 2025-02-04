@@ -8,7 +8,7 @@
 body,
 html {
   background-color: #ffe2c1;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -173,7 +173,7 @@ main .row .col .grid div {
 
 /* here i did it */
 main .row .col .grid div img {
-  width: 100px;
+  width: 8vw;
   border-top-right-radius: 15px;
   /* border-bottom-left-radius: 15px; */
   margin: 0px auto;
@@ -183,7 +183,7 @@ main .row .col .grid div img {
 main .row .col .grid div p {
   font-size: 14px;
   text-decoration: none;
-  width: 60%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,10 +229,10 @@ main .fav-food-row .col {
 }
 
 main .fav-food-row .col img {
-  width: 120px;
-  height: 160px;
+  width: 6vw;
+  height: 8vh;
   background-image: url("./food.jpg");
-  background-size: 130px 160px;
+  background-size: 6vw 8vh;
   background-position: center center;
   background-repeat: no-repeat;
   border: none;
@@ -257,4 +257,92 @@ main .fav-food-row .col p {
   font-weight: 500;
   margin-bottom: 15px;
   margin-top: 5px;
+}
+
+footer {
+  width: 100%;
+  background-color: #feb663;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 15px;
+}
+
+footer .foot-top {
+  width: 70vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px auto;
+}
+
+footer .foot-top div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .foot-top div p {
+  color: #A44400;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+footer .foot-top div ul {
+  list-style: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+
+footer .foot-top div ul.link li {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+footer .foot-top div ul li a {
+  text-decoration: none;
+  color: #414141;
+}
+
+footer .foot-top div ul.link li a {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+}
+
+footer .foot-top div ul.link li a i {
+  font-size: 20px;
+}
+
+footer .foot-top div ul li a.pre {
+  color: #ff0000;
+}
+
+footer .foot-bot {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #686868;
+}
+
+footer .foot-bot span {
+  color: #000;
+  margin-left: 3px;
 }
