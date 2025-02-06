@@ -14,81 +14,116 @@ html {
 
 header {
   width: 100%;
-  height: 120px;
   display: flex;
-  flex-direction: column;
-  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+  /* background-color: ; */
 }
 
-header .top {
-  display: flex;
-}
-
-header .top .lft {
-  width: 30%;
-}
-
-header .top .mdl {
-  width: 40%;
+header .left {
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-header .top .mdl h2 {
-  font-size: 40px;
+.scroll-header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: #ffa640;
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  border: none;
+}
+
+.scroll-header .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 113px;
+}
+
+.scroll-header .rgt {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  padding-right: 113px;
+}
+
+.scroll-header .left .top {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  align-content: center;
+}
+
+.scroll-header .left .top h2 {
+  font-size: 34px;
+  font-weight: 700;
   color: #fa6800;
 }
 
-header .top .rgt {
-  width: 30%;
+.scroll-header .left .btm {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  text-align: center;
+  align-items: center;
+}
+
+.scroll-header .left .btm p {
+  width: 200px;
+  background-color: #ce904a9d;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
 }
-
-header .top .rgt .profile {
-  width: 140px;
-  height: auto;
+.scroll-header .rgt .profile {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  height: 45px;
+  width: 11vw;
   background-color: #feb663;
-  padding: 10px 20px;
+  align-items: center;
+  justify-content: space-evenly;
   border-radius: 5px;
   font-size: 20px;
   font-weight: 400;
   color: #002d68;
 }
 
-header .top .rgt .profile i {
+.scroll-header .rgt .profile i {
   font-size: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-header .bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.scroll-header {
+  width: 100%;
+  position: fixed;
+  background-color: #FFA640;
+  display: flex !important;
+  top: 0;
+  left: 0;
+  margin-top: 0;
 }
 
-header .bottom p {
-  width: 240px;
-  font-size: 16px;
-  height: auto;
-  color: #fff;
-  padding: 10px 15px;
-  font-weight: 100;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  background-color: #ffa640;
-  border-radius: 5px;
-}
+/* .scroll-header  */
 
 main {
   width: 100%;
@@ -96,6 +131,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 115px;
 }
 
 main .container {
