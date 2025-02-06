@@ -12,19 +12,79 @@ html {
   margin: 0 auto;
 }
 
-header {
+.no-scroll {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background-color: ; */
+  margin: 15px auto;
 }
 
-header .left {
+.no-scroll .left {
   width: 50%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.no-scroll .left .top {
+  font-size: 32px;
+  font-weight: 600;
+  color: #FA6800;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.no-scroll .left .top h2 {
+  cursor: pointer;
+}
+
+.no-scroll .left .btm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.no-scroll .left .btm p {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFA640;
+  border-radius: 2.3px;
+  padding: 12px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.no-scroll .rgt {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-scroll .rgt .profile {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 25px;
+  font-weight: 500;
+  color: #002D68;
+  background-color: #FEB663;
+  border-radius: 2.5px;
+  padding: 8px 15px;
+  cursor: pointer;
 }
 
 .scroll-header {
@@ -71,6 +131,7 @@ header .left {
   font-size: 34px;
   font-weight: 700;
   color: #fa6800;
+  cursor: pointer;
 }
 
 .scroll-header .left .btm {
@@ -89,7 +150,7 @@ header .left {
   align-items: center;
   justify-content: center;
   padding: 12px;
-  border-radius: 5px;
+  border-radius: 2.3px;
   font-size: 16px;
   color: #fff;
 }
@@ -100,10 +161,11 @@ header .left {
   background-color: #feb663;
   align-items: center;
   justify-content: space-evenly;
-  border-radius: 5px;
+  border-radius: 2.4px;
   font-size: 20px;
   font-weight: 400;
   color: #002d68;
+  cursor: pointer;
 }
 
 .scroll-header .rgt .profile i {
