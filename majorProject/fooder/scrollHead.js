@@ -10,3 +10,7 @@ const scrollHeader = () => {
 };
 
 window.addEventListener('scroll', scrollHeader);
+
+const profilePage = () => {
+  window.location.href = "./profile.html";
+}
