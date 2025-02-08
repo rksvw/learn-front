@@ -76,26 +76,107 @@ header .home a i {
 }
 
 header .logo {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header .logo a {
-    text-decoration: none;
-    color: #FA6800;
-    font-size: 32px;
-    margin-bottom: 15px;
+  text-decoration: none;
+  color: #fa6800;
+  font-size: 32px;
+  margin-bottom: 15px;
 }
 
 header .logo p {
-    width:300px;
-    background-color: #FFA640;
-    font-size: 16px;
-    color: #fff;
-    padding: 9.8px 15px;
-    font-weight: 400;
-    border-radius: 2.5px;
+  width: 300px;
+  background-color: #ffa640;
+  font-size: 16px;
+  color: #fff;
+  padding: 9.8px 15px;
+  font-weight: 400;
+  border-radius: 2.5px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form .pf-img {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form .pf-img input {
+  width: 130px;
+  height: 130px;
+  background-color: transparent;
+  border: 1.5px solid #a44400;
+  border-radius: 50%;
+}
+
+form .name , .num , .loc , .bio {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form div.name input,
+div.num input,
+div.loc input,
+div.bio input {
+  width: 460px;
+  border-radius: 5px;
+  display: flex;
+  background-color: #f6f6f6;
+  font-size: 20px;
+  font-weight: 500;
+  color: #040404;
+  outline: none;
+  border: none;
+  padding: 15px 15px;
+  margin: 10px auto;
+}
+
+form div.name {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form div button {
+  background-color: #ffc37d;
+  color: #a44400;
+  outline: none;
+  border: none;
+  width: 120px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+form > button {
+  width: 150px;
+  margin: 15px auto;
+  padding: 15px 15px;
+  outline: none;
+  border: none;
+  background-color: #f77a05;
+  border-radius: 50px;
+  color: #faf8f8;
+  font-size: 16px;
+  font-weight: 500;
 }
