@@ -71,6 +71,8 @@ form .log {
 form .log p {
   width: 250px;
   display: flex;
+  font-size: 20px;
+  font-weight: 600;
   justify-content: center;
   align-items: center;
   background-color: #ffa640;
@@ -113,6 +115,22 @@ form p .box {
   width: 15px;
   height: 15px;
   cursor: pointer;
+}
+
+form .ac {
+    width: 500px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 30px;
+    color: #464646;
+}
+
+form .ac span {
+    color: #0e76ff;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 form button {
