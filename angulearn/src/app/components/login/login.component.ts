@@ -1,31 +1,41 @@
-import { NgFor } from '@angular/common';
-import { Component } from '@angular/core';
-import { LoginService } from '../../services/login.service';
+import { Component } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
+import { Router } from "@angular/router";
+import { LoginService } from "../../services/login.service";
 
 @Component({
-  selector: 'login', // ! <login> "login"
-  imports: [NgFor],
-  templateUrl: './login.component.html', // ! HTML Template
-  styleUrl: './login.component.scss',
+  selector: 'app-login',
+  standalone: true,
+  imports: [CommonModule, FormsModule],
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  title = 'Angular Learn'; // !data binding
-  creator = 'rksvw.io';
-  favAnime: string[];
+  email = '';
+  password = '';
+  errMsg = '';
 
-  constructor(service: LoginService) {
+  constructor(private loginService: LoginService, private router: Router) {
     // let Service = new LoginService();
-    this.favAnime = service.loginUser();
   }
 
-  // favAnime = ['Blue Lock', 'One piece', 'Naruto', 'Death Note'];
-
-  getTitle() {
-    return this.creator;
+  onLogin() {
+    this.loginService.login(this.email, this.password).subscribe({
+      next: (response) => {
+        const token = response.data?.login?.token;
+        if (token) {
+          localStorage.setItem('token', token);
+          this.router.navigate(['/']);
+        } else {
+          this.errMsg = 'Invalid credentials';
+        }
+      },
+      error: () => {
+        this.errMsg = 'Login failed. Try again.'
+      }
+    })
   }
-
-
-  // Logic for calling an HTTP Service
 
 
 }
