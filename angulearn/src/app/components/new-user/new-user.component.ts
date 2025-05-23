@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './new-user.component.html',
-  styleUrl: './new-user.component.scss'
+  styleUrl: './new-user.component.scss',
 })
 export class NewUserComponent {
   name = '';
@@ -20,20 +20,22 @@ export class NewUserComponent {
   constructor(private newUserService: NewuserService, private router: Router) {}
 
   onNewUser() {
-    this.newUserService.newAccount(this.name, this.email, this.password).subscribe({
-      next: (response) => {
-        console.log(response)
-        const token = response.data?.signup?.token;
-        if (token) {
-          localStorage.setItem('token', token);
-          this.router.navigate(['/']);
-        } else {
-          this.errMsg = 'Invalid credentials';
-        }
-      },
-      error: () => {
-        this.errMsg = 'Create Account failed. Try again.'
-      }
-    })
+    this.newUserService
+      .newAccount(this.name, this.email, this.password)
+      .subscribe({
+        next: (response) => {
+          console.log(response);
+          const token = response.data?.signup?.token;
+          if (token) {
+            localStorage.setItem('token', token);
+            this.router.navigate(['/']);
+          } else {
+            this.errMsg = 'Invalid credentials';
+          }
+        },
+        error: () => {
+          this.errMsg = 'Create Account failed. Try again.';
+        },
+      });
   }
 }

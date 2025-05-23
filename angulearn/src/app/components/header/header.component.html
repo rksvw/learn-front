@@ -1,0 +1,7 @@
+<div class="header">
+    <div class="head-lft">
+    </div>
+    <ng-container *ngFor="let item of items; trackBy: trackById">
+        <li [id]="item.index">{{item.name}} <mat-icon [fontIcon]="item.icon"></mat-icon></li>
+    </ng-container>
+</div>

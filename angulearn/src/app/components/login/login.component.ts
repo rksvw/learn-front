@@ -33,9 +33,9 @@ export class LoginComponent {
       },
       error: () => {
         this.errMsg = 'Login failed. Try again.'
+
       }
     })
   }
-
 
 }
